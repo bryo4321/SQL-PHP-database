@@ -1,0 +1,324 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #36C;
+}
+a:hover {
+	color: #06F;
+}
+body {
+	background: #c5e8df url(img/bg.gif);
+	color: #444;
+	font: normal .7em "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin: 0;
+}
+input {
+	color: #555;
+	font: normal 1.1em "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+p,cite,code,ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+h1 {
+	font-size: 1.6em;
+	margin-bottom: 4px;
+}
+code {
+	background: url(img/bgcode.gif);
+	border: 1px solid #F0F0F0;
+	border-left: 6px solid #39F;
+	color: #555;
+	display: block;
+	font: normal 1.1em "Lucida Sans Unicode",serif;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+	white-space: pre;
+}
+cite {
+	background: url(img/quote.gif) no-repeat;
+	color: #FFF;
+	display: block;
+	font: normal 1.3em "Lucida Sans Unicode",serif;
+	padding-left: 28px;
+}
+h1,h2,h3 {
+	color: #e8825a;
+	padding-top: 6px;
+}
+/* misc */
+.clearer {
+	clear: both;
+}
+/* structure */
+.container {
+	background: url(img/bgcontainer.gif) repeat-y;
+	margin: 0 auto;
+	padding-bottom: 6px;
+	width: 767px;
+}
+.header {
+	background: url(img/header.gif) repeat-x;
+}
+/* title */
+.title h1 {
+	color: #FFF;
+	font: normal 3.5em Georgia, serif;
+	height: 70px;
+	line-height: 150px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+/* navigation */
+.navigation {
+	margin-bottom: 4px;
+}
+.navigation a {
+	background-color: #4A91C3;
+	color: #FFF;
+	float: left;
+	font: bold 1.2em "Trebuchet MS",sans-serif;
+	padding: 8px 0;
+	width: 19%;
+	border-right: 1px solid #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background-color: #000;
+	color: #FFF;
+}
+/* main */
+.main {
+	clear: both;
+	padding: 8px 18px;
+}
+/* main left */
+.sidenav h1,.sidenav ul {
+	padding-left: 12px;
+}
+.sidenav {
+	background: #ffe0dd;
+	border: 1px solid #E5E5E5;
+	float: left;
+	width: 200px;
+}
+.sidenav h1 {
+	color: #666;
+	font-size: 1.2em;
+	height: 20px;
+	margin-top: 1.2em;
+}
+.sidenav ul {
+	border-top: 1px solid #FAFAFA;
+	background: url(img/bgul.gif) repeat-x;
+	margin: 0;
+	padding: 0;
+}
+.sidenav li {
+	border: 1px solid #FAFAFA;
+	border-top: none;
+	list-style: none;
+	margin: 0;
+}
+.sidenav li a {
+	color: #777;
+	display: block;
+	font-size: 0.9em;
+	padding: 3px 6px 3px 14px;
+	text-decoration: none;
+}
+.sidenav li a:hover {
+	color: #111;
+}
+
+/* content */
+.content {
+	float: right;
+	width: 520px;
+}
+.content .item {
+	padding: 6px 12px;
+	border: 1px solid #ffe0dd;
+	background: #ffe0dd;
+	margin-bottom: 8px;
+}
+.content .descr {
+	color: #333;
+	margin-bottom: 2px;
+}
+.content li {
+	list-style: url(img/li.gif);
+	margin-left: 18px;
+}
+
+/* search form */
+form {
+	padding: 0 0 6px 8px;
+}
+.styled {
+	border: 1px solid #DDD;
+	padding: 4px;
+}
+.button {
+	background: url(img/search.gif) no-repeat left bottom;
+	border: none;
+	height: 27px;
+	width: 27px;
+}
+
+/* footer */
+.footer {
+	background: #FFF;
+	border: 1px solid #FFF;
+	color: #666;
+	font-size: 1em;
+	margin: 0 auto;
+	text-align: center;
+	padding: 6px;
+	width: 720px;
+}
+.footer a {
+	color: #36C;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #06F;
+	text-decoration: underline;
+}
+
+/*Read More Button*/
+.read-more-state {
+  display: none;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: 1.1em;
+  max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+/*  old code
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="default.css" media="screen"/>
+<title>mgs.</title>
+</head>
+
+<body>
+
+<div class="container">
+	
+	<div class="main">
+
+		<div class="header">
+		
+			<div class="title">
+				<h1>Melissa-Grace Soriano</h1>
+				<br>
+                                <h3>&nbsp; Undergrad - Writer - Foodie </h3>
+			</div>
+
+		</div>
+		<div class="content">
+	
+			<div class="item">
+
+				<h1>This is my first blog post.</h1>
+				<div class="descr">February 27, 2017</div>
+<div>
+  <input type="checkbox" class="read-more-state" id="post-2" />
+
+  <ul class="read-more-wrap"> <!-- Read more button code starts here -->
+				<cite>For I am persuaded that neither that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, 
+					nor things to come, Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, 
+					which is in Christ Jesus our Lord.
+					<br>-- Romans 8:38-39
+				</cite> 
+<p class="read-more-target"> <!-- Hidden Text under "Read More" button -->				
+				Today, I start working on the details of my website. I claim this verse in light of everything that has happened to me thus far.
+					Time and time again, I am shown that I am not alone in any of my endeavors.
+
+				<br><br>So, hopefully, this will be yet another successful endeavor in my pursuit of wellness and successes in my career.
+	  </p></ul>
+  
+  <label for="post-2" class="read-more-trigger"></label>
+</div> <!-- end of Read more code -->
+
+
+			</div>
+
+		</div> 
+
+		<div class="sidenav">
+
+			<h1>About Me</h1>
+			<ul>
+				<li><a href="Webpages/Biography.html">Biography</a></li> 
+				<li><a href="index.html">Gallery</a></li>
+				<li><a href="index.html">Resume</a></li>
+			</ul>
+
+			<h1>Food Blog</h1>
+			<ul>
+				<li><a href="index.html">Reviews</a></li>
+				<li><a href="index.html">Gallery</a></li>
+				<li><a href="index.html">Recommendations</a></li>
+			</ul>
+
+			<h1>Contact</h1>
+			<ul>
+				<li><a href="https://www.facebook.com/missyoou">Facebook</a></li>
+				<li><a href="https://www.instagram.com/missyfeasts/">Instagram</a></li>
+				<li><a href="index.html">Email</a></li>
+			</ul>
+
+			<h1>Search</h1>
+			<form action="index.html">
+			<div>
+				<input type="text" name="search" class="styled" /> <input type="submit" value="" class="button" />
+			</div>
+			</form>
+
+		</div>
+	
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+	<div class="footer"> Melissa-Grace &copy; 2017
+	</div>
+
+</div>
+
+</body>
+
+</html>
+*/
